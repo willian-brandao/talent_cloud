@@ -1,0 +1,59 @@
+
+html{
+    font-family:sans-serif, Georgia;
+    margin: 20px 100px;
+}
+main{
+    display: flexbox;
+    justify-content: space-around;
+    
+}
+.cabecalho_pagina{
+    display: flex;
+    justify-content: space-between;
+}
+.cabecalho_pagina img{
+    height: 150px;
+}
+#itens_menu_header li{
+    list-style-type: none;
+    margin: 10px;
+    display: inline-block;
+    padding: 10px;
+    background-color: blue;
+    display: flexbox;
+    justify-content: flex-end;
+   
+}
+#itens_menu_header  li a{
+    text-decoration: none;
+    background-color: blu;
+    color:white;
+    height: 20px;
+}
+.container_principal{
+    display: flex;
+    
+
+}
+
+
+#cabecalho_sessao_principal{
+    display: inline-block;
+    justify-content: flex-start;
+    margin: 10px 10px;
+   
+    width: 100%;
+    height: 80%;
+
+}
+
+
+#texto_descricao  {
+    display: block; 
+  
+    text-align: justify;
+    width: 100%;
+    align-items: center;
+ 
+}
