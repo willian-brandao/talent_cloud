@@ -1,0 +1,14 @@
+h1 {
+    color: blue;
+    background-color: aqua;
+}
+div {
+    background-color: lightgray;
+    margin: 40px;
+    padding: 10px;
+    border: solid black 8px;
+}
+
+p {
+    background-color: chartreuse;
+}

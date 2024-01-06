@@ -1,0 +1,55 @@
+* {
+    font-family: 'Maven Pro', sans-serif;
+    margin:0;
+    padding: 0;
+}
+header {
+    background-color: rgb(223, 217, 217);
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;    
+
+}
+    
+ul{
+    display: flex;
+    list-style: none;
+    height: 100%;
+    align-items: center;
+}
+nav ul li {
+    margin-left: 15px;
+    
+}
+nav ul li a {
+    text-decoration: none;
+}
+
+
+main{
+    background-color: blue;
+    color: white;
+    padding-top: 16px;
+    width: 800px;
+    margin: 0 auto;
+    padding-top: 16px;
+    padding-left: 12px;
+}
+
+section{
+    display: flex;
+}
+
+
+section div{
+    background-image: url("/semana8-css/teste3_css/img/bg_laranja.jpg");
+    padding: 12px;
+    height: 200px;
+    width: 300px;
+    color: white;
+    border-radius: 16px;
+}
+
+section div:first-of-type{
+    margin-right: 10px;
+}
