@@ -27,7 +27,7 @@ elementoButton.on
 // Adicionar um comentário indicando a primeira interação
 console.log("Primeira interação do usuario");
 
-//capturando elemento realcionado ao login
+//capturando elemento relacionado ao login
 const usernameInput = document.getElementById('login-usuario');
 
 //Adiciona a classe de 'error' ao input do nome do usuario
@@ -46,10 +46,12 @@ elementoP = document.querySelectorAll("p");
 if(usuario == true && senha == true ){
     usernameInput.classList.add('correct');
     passwordInput.classList.add('correct');
+    
 
 }else if(usuario == false && senha == true ){
     usernameInput.classList.add('error');
     passwordInput.classList.add('correct');
+    elementoP[0].classList.add('visible');
 
 }else if(usuario == true && senha == false ){
     usernameInput.classList.add('correct');

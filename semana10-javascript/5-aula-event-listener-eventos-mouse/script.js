@@ -38,20 +38,28 @@ function atualizarSubTotal(){
 //chamada de função de atualização
 //atualizarSubTotal();
 
+//função para adicionar um item no carrinho, ela incrementa a quantidade em mais um
 function adicionarValor() {
+  //se a quantidade for menor ou igual ao limite permitido, permite anexar mais um 1
   if(quantidade.value < quantidadeDeProdutos){
+    //faz um cast de valor numero
     quantidade.value = Number(quantidade.value) + 1;
+    //atualiza a variavel subtotalInfo com a quantidade inserida
     subtotalInfo.quantidade = quantidade.value
-
+    //acrescenta a qunatidade do valor de mais 1 produto
     subtotalInfo.valor = subtotalInfo.valor + valorProduto01;
+    //chamada da função de atualizar valor
     atualizarSubTotal();
   }else{
+    //se caso ultrapassar a quantidade maxima, gera um alerta
     alert('Você atingiu a quantidade máxima de produtos!');
   }
 }
 
+//chamada do método de evento para que a função seja acionada assim que o usuario clicar no botão
 btnAdicionar.addEventListener("click", adicionarValor);
 
+//função para retirar um item no carrinho, ela decrementa a quantidade em menos um
 function subtrairValor(){
   if(quantidade.value > 1){
     quantidade.value = Number(quantidade.value) - 1;
